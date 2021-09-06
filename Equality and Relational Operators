@@ -1,0 +1,36 @@
+//Dart Equality and Relational Operators 
+void main ()// main function body  
+{
+  gre();       //function body for greater than
+  less();      //function body for Less than
+  greqal();    //function body for greater than or equal to 
+  lesseqal();  //function body for less than or equal to
+  noteqal();   //function body for not equal to
+  iseqal();    //function body for is equal to
+}
+  var a=10;//
+  var b=20;//
+void gre()  //greater than
+{
+  print (a>b);//	(A > B) is False
+}
+void less()//Less than
+{
+  print(a<b);//(A < B) is True
+}
+void greqal()//greater than or equal to 
+{
+  print(a>=b);//(A >= B) is False
+}
+void lesseqal()//less than or equal to
+{
+  print(a<=b);//(A <= B) is True
+}
+void noteqal()//not equal to
+{
+  print(b!=a);//(A!=B) is True
+}
+void iseqal()//is equal to
+{
+  print(b==a);//(A==B) is False
+}

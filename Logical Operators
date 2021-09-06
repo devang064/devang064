@@ -1,0 +1,33 @@
+//Dart Logical Operators
+void main ()// main function body  
+{
+  and();   //function body for And operators
+  or();    //function body for OR operators
+  not();    //function body for Not operators
+  
+}
+  var a=10,b=20,c=30;//declare variable
+void and()  
+{
+   print("And operators");
+  print (a > b && b > c);// false (f*f=f)
+  print (a < b && b < c);//true(t*t=t)
+  print (a >= b && b >= c);//false(f*f=f)
+  print (a <= b && b <= c);//true(t*t=t)
+  print (a < b && b > c);//false (t*f=f)
+}
+void or()// Multiply
+{
+  print("OR operators");
+  print (a > b || b > c);//false (f+f=f)
+  print (a < b || b < c);//true(t+t=t)
+  print (a >= b || b >= c);//false (f+f=f)
+  print (a <= b || b <= c);//true(t+t=t)
+  print (a < b || b > c);//true (t+f=f)
+}
+void not()// Divide
+{
+   print("Not operators");
+  print(!(a > b));//true
+  print(!(b< c));//false
+}

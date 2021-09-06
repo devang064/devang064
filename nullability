@@ -1,0 +1,9 @@
+//nullability
+void main()
+{
+  final a=[];// empty
+  print(a);
+  
+  int b;
+  print(b);//null value
+}

@@ -1,0 +1,23 @@
+//optional variable
+void main()
+{
+
+  int b;
+  print(b??5);//predefined value 5
+  
+  int a=15;//already define value of a
+  print(a??5);//15
+  
+  dynamic c=10;
+  if (c is int)//condition
+  {
+    print('yes');//yes because c is int
+  }
+  if (c is String)//condition
+  {
+    print('yes');
+  }
+  else{
+    print('no');//no
+  }
+}

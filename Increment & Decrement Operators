@@ -1,0 +1,31 @@
+//Dart Increment & Decrement Operators 
+void main ()// main function body  
+{
+  plus();   //function body for add numbers
+  mul();    //function body for multiply numbers
+  div();    //function body for divide numbers
+  sub();    //function body for subract numbers
+  mod();    //function body for Remainder of number
+  
+}
+  dynamic a=10;//Because mod and divison is not show the ans that's why im use dynamic d.type
+void plus()  // sum
+{
+  print (a+=20);//	The Adding 20 in a (Ans=30)
+}
+void mul()// Multiply
+{
+  print(a*=2);//(Ans=30)Multiplication 2=(Ans 30*2=60 )
+}
+void div()// Divide
+{
+  print(a/=2);//(Ans of mul=60) Divide 2=(Ans 60/2=30)
+}
+void sub()// Subtract
+{
+  print(a-=20);//(Ans of div=30) Subtract 20=(Ans 30-20=10) 
+}
+void mod()// Modulo
+{
+  print(a%=2);//(Ans of Sub=10) Modulo 2 =(Ans 10%2=0)
+}

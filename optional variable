@@ -1,0 +1,10 @@
+//optional variable
+void main()
+{
+
+  int b;
+  print(b??5);//predefined value 5
+  
+  int a=15;//already define value of a
+  print(a??5);//15
+}

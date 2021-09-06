@@ -1,0 +1,21 @@
+//Basic types of data
+void main()  //main function body 
+{
+  int a=10;
+  double b=3.14;
+  String c='devang';
+  bool d= false;
+  dynamic e='devang';
+  dynamic f=3.14;
+  dynamic g=true;
+  dynamic h=3;
+  print(a.runtimeType);
+   print(b.runtimeType);
+   print(c.runtimeType);
+   print(d.runtimeType);
+  //dynamic consider all data type automatically
+   print(e.runtimeType);
+   print(f.runtimeType);
+   print(g.runtimeType);
+   print(h.runtimeType);
+}  

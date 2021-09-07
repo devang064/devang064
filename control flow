@@ -1,0 +1,9 @@
+//if statement
+  void main() { 
+  int  a = 10; 
+   if (a % 2==0) //statement will execute if the condition is true
+   { 
+      print("Even");//even 
+   }
+}
+

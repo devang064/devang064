@@ -20,3 +20,32 @@ void main(){
   }
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//else if statement
+void main(){
+   int a=3;
+  if (a==1)//condition 1
+  {
+    print("sunday");//not satisfy condition
+  }
+  else if(a==2)//condition 2
+  {
+    print("monday");//not satisfy condition
+  }
+   else if(a==3)//condition 3
+   {
+    print("tuesday");//satisfy condition  ans:tuesday
+  } else if(a==4)//condition 4
+   {
+    print("wednesday");//not satisfy condition
+  } else if(a==5)//condition 5
+   {
+    print("thursday");//not satisfy condition
+  } else if(a==6)//condition 6
+   {
+    print("friday");//not satisfy condition
+  } else if(a==7)//condition 7
+   {
+    print("saturday");//not satisfy condition
+  }
+}

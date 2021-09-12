@@ -174,3 +174,26 @@ void main()
   while (count <= 10);//condition
 	print("Geek, you are out of while loop");
 }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//for loop with break statement
+void main(){
+    int rows = 6;
+    for(int i = 0 ; i< rows; i++)//condition1
+    { 
+       String s = '';
+         {
+          if (i==4)//condition for break statement in 1st loop
+          {
+            print('break');
+            break;
+          }
+    }
+        for(int j = 0; j<=i;j++)//condition2
+        {
+ 
+          s = s + '* ';
+        }
+       
+        print('$s');
+    }
+}

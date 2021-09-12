@@ -90,5 +90,26 @@ void main() {
    { 
          print("print $i");     //statements 
    } 
-  
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//while loop with break 
+void main()
+{
+    int count = 0;
+  
+    while (count <= 10) {
+        count++;
+  
+        if (count == 4) {
+            print("Number 4 is break");
+           break;
+      
+        }
+  
+        print("inside loop $count");
+    }
+  
+    print("out of while loop");
+}
+

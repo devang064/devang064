@@ -154,3 +154,23 @@ void main()
   while (count <= 10);//condition
 	print("Geek, you are out of while loop");
 }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//do while loop with break  statement
+void main()
+{
+	int count = 0;
+
+	do {
+		count++; //increment of counter
+
+		if (count == 4)//condition for break
+    {
+			print("Number 4 is skipped"); //statement
+			break;
+		}
+
+		print("Geek, you are inside loop $count");//statement
+	}
+  while (count <= 10);//condition
+	print("Geek, you are out of while loop");
+}

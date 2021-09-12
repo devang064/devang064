@@ -112,4 +112,23 @@ void main()
   
     print("out of while loop");
 }
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//while loop with continue
+void main()
+{
+    int count = 0;
+  
+    while (count <= 10) {
+        count++;
+  
+        if (count == 4) {
+            print("Number 4 is continue");
+           continue;
+      
+        }
+  
+        print("inside loop $count");
+    }
+  
+    print("out of while loop");
+}

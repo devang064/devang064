@@ -1,25 +1,67 @@
-class Gammers {
- void games() {
+//mixin 
+class Gammers//defin gammers class
+{
+ void games() //method
+ {
  print('play gamming...');
  }
 }
-mixin Indoorgame {
- void games() {
- print('pubg...chess...Sock Toss');
+mixin Indoorgame //using mixin function indoorgame
+{
+ void games() //method in indoorgames
+ {
+ print('pubg...chess...Sock Toss');//statement
  }
 }
-mixin Outdoorgame {
- void games() {
+mixin Outdoorgame//using mixin function outdoorgame
+{
+ void games()//method in outdoorgames
+ {
  print('cricket...football...volleyball');
  }
 }
-class Gamming extends Gammers with Outdoorgame, Indoorgame {
+class Gamming extends Gammers with Indoorgame, Outdoorgame //create class which extended by gamemes class and call mixin function games method and call last mixin class outdoorgame
+{
  void showTime() {
  games();
  }
 }
-void main() {
- var m = Gamming();
+void main() 
+{
+ var m = Gamming();//call the function
 m.showTime();
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//mixin 
+class Gammers//defin gammers class
+{
+ void games() //method
+ {
+ print('play gamming...');
+ }
+}
+mixin Indoorgame //using mixin function indoorgame
+{
+ void games() //method in indoorgames
+ {
+ print('pubg...chess...Sock Toss');//statement
+ }
+}
+mixin Outdoorgame//using mixin function outdoorgame
+{
+ void games()//method in outdoorgames
+ {
+ print('cricket...football...volleyball');
+ }
+}
+class Gamming extends Gammers with Outdoorgame, Indoorgame //create class which extended by gamemes class and call mixin function games method call last mixin class Indoorgame
+{
+ void showTime() {
+ games();
+ }
+}
+void main() 
+{
+ var m = Gamming();//call the function
+m.showTime();
+}

@@ -93,18 +93,19 @@ void main() {
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//while loop with break 
+//while loop with break
 void main()
 {
     int count = 0;
   
-    while (count <= 10) {
+    while (count <= 10)//condition 
+    {
         count++;
   
-        if (count == 4) {
-            print("Number 4 is break");
-           break;
-      
+        if (count == 4) //condition for break
+        {
+            print("Number 4 is out of loop");//statement 
+           break;   //break the loop if counter is 4 is found 
         }
   
         print("inside loop $count");
@@ -118,13 +119,14 @@ void main()
 {
     int count = 0;
   
-    while (count <= 10) {
+    while (count <= 10)//condition 
+    {
         count++;
   
-        if (count == 4) {
-            print("Number 4 is continue");
-           continue;
-      
+        if (count == 4) //condition for continue
+        {
+            print("Number 4 is continue");//statement 
+           continue;//continue the loop if counter is 4 is found 
         }
   
         print("inside loop $count");

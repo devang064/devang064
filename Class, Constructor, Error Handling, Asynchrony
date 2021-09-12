@@ -1,0 +1,24 @@
+class Gammers {
+ void games() {
+ print('play gamming...');
+ }
+}
+mixin Indoorgame {
+ void games() {
+ print('pubg...chess...Sock Toss');
+ }
+}
+mixin Outdoorgame {
+ void perform() {
+ print('cricket...football...volleyball');
+ }
+}
+class Gamming extends Gammers with Outdoorgame, Indoorgame {
+ void showTime() {
+ games();
+ }
+}
+void main() {
+ var m = Gamming();
+m.showTime();
+}

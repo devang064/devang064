@@ -168,12 +168,12 @@ final List<String>s  = <String>[
 'kushal jain',
 'Snehal Prajapati',
 ];
- var chunks = [];
+ var div = [];
   for (var i = 0; i < s.length; i += 4) {
-    chunks.add(s.sublist(i, i+2 > s.length ? s.length : i + 4)); 
+    div.add(s.sublist(i, i+2 > s.length ? s.length : i + 4)); 
   }
-  print(chunks);
-  var maps=chunks.asMap();
+  print(div);
+  var maps=div.asMap();
   print(maps);
    for (final mapEntry in maps.entries) {
     final key = mapEntry.key;
@@ -237,15 +237,87 @@ final List<String>s  = <String>[
 ];
   s.sort();
   print(s);
- var chunks = [];
+ var div= [];
   for (var i = 0; i < s.length; i += 4) {
-    chunks.add(s.sublist(i, i+2 > s.length ? s.length : i + 4)); 
+    div.add(s.sublist(i, i+2 > s.length ? s.length : i + 4)); 
   }
-  print(chunks);
-  var maps=chunks.asMap();
+  print(div);
+  var maps=div.asMap();
   print(maps);
    for (final mapEntry in maps.entries) {
     final key = mapEntry.key;
     final value = mapEntry.value;
     print('group: $key, Value: $value');  // Key: a, Value: 1 ...
   }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void main(){
+ 
+final List<String>s  = <String>[
+'Kalpit Seksariya',
+'Gaurang Gajera',
+'Bollam saiprakash',
+'Dhruv Vaghela',
+'Jaydeep Dhamecha',
+'Jigar Pandya',
+'Riddhi Bhavsar',
+'Ankit Jadav',
+'Jayesh Gurudayalani',
+'Charmi Goswami',
+'Manish Mundra ',
+'Siddarth Koshiyar ',
+'Anand Sharma ',
+'Chirag Rami ',
+'Akash Thakkar',
+'Khushi Mundra',
+'Ami Thakkar',
+'Ashutosh Dave',
+'Dhruv Samani',
+'Sajid Shaikh ',
+'QURESHI MOHAMMADJALAL',
+'Devang Patel',
+'Pravin Fofariya ',
+'Raj Singhala',
+'Mahesh Kumar Dey',
+'Akshat Pujara',
+'Shivam Pathak',
+'Suhas Vaishnav',
+'Nirbhay Goswami',
+'Manjeet Kaur Bhasin',
+'Yash Parmar',
+'Rutvik Dhami',
+'Harsh Shah',
+'Farhan Shaikh ',
+'Priyank Jamvecha',
+'Rutvik Jamvecha',
+'Raj Singhala',
+'SRINIVAS KALYAN MORLA',
+'Madhupada Vinay',
+'Namrata Jenish kacha',
+'Nisarg Parikh',
+'Ruchi Kariya',
+'Jhanvi Vaishnav',
+'Dhruv Sanjaybhai Kikani ',
+'Kushal jain',
+'Renish Dudhat',
+'kushal jain',
+'Snehal Prajapati',
+];
+  print(s);//original value
+  s.sort();// sort them alphabetically
+  print(s);//print student name in alphabetically
+ var div = [];//new array pice of array
+  for (var i = 0; i < s.length; i += 4) //condition divide in to 4 sub parts
+  {
+    div.add(s.sublist(i, i+2 > s.length ? s.length : i + 4)); //4 subparts
+  }
+  print(div);
+  var maps=div.asMap();//mapping giving number
+  print(maps);
+   for (final mapEntry in maps.entries)//for pint values and grout in new line
+   {
+    final key = mapEntry.key;
+    final value = mapEntry.value;
+    print('group: $key, Value: $value');  // Key: a, Value: 1 ...
+  }
+ 
+}

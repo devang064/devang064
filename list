@@ -54,3 +54,131 @@ s.shuffle();
 
  print(s.first);
 }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void main(){
+ 
+final List<String>s  = <String>[
+'Kalpit Seksariya',
+'Gaurang Gajera',
+'Bollam saiprakash',
+'Dhruv Vaghela',
+'Jaydeep Dhamecha',
+'Jigar Pandya',
+'Riddhi Bhavsar',
+'Ankit Jadav',
+'Jayesh Gurudayalani',
+'Charmi Goswami',
+'Manish Mundra ',
+'Siddarth Koshiyar ',
+'Anand Sharma ',
+'Chirag Rami ',
+'Akash Thakkar',
+'Khushi Mundra',
+'Ami Thakkar',
+'Ashutosh Dave',
+'Dhruv Samani',
+'Sajid Shaikh ',
+'QURESHI MOHAMMADJALAL',
+'Devang Patel',
+'Pravin Fofariya ',
+'Raj Singhala',
+'Mahesh Kumar Dey',
+'Akshat Pujara',
+'Shivam Pathak',
+'Suhas Vaishnav',
+'Nirbhay Goswami',
+'Manjeet Kaur Bhasin',
+'Yash Parmar',
+'Rutvik Dhami',
+'Harsh Shah',
+'Farhan Shaikh ',
+'Priyank Jamvecha',
+'Rutvik Jamvecha',
+'Raj Singhala',
+'SRINIVAS KALYAN MORLA',
+'Madhupada Vinay',
+'Namrata Jenish kacha',
+'Nisarg Parikh',
+'Ruchi Kariya',
+'Jhanvi Vaishnav',
+'Dhruv Sanjaybhai Kikani ',
+'Kushal jain',
+'Renish Dudhat',
+'kushal jain',
+'Snehal Prajapati',
+];
+ var chunks = [];
+  for (var i = 0; i < s.length; i += 4) {
+    chunks.add(s.sublist(i, i+2 > s.length ? s.length : i + 4)); 
+  }
+  print(chunks);
+  var maps=chunks.asMap();
+  print(maps);
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void main(){
+ 
+final List<String>s  = <String>[
+'Kalpit Seksariya',
+'Gaurang Gajera',
+'Bollam saiprakash',
+'Dhruv Vaghela',
+'Jaydeep Dhamecha',
+'Jigar Pandya',
+'Riddhi Bhavsar',
+'Ankit Jadav',
+'Jayesh Gurudayalani',
+'Charmi Goswami',
+'Manish Mundra ',
+'Siddarth Koshiyar ',
+'Anand Sharma ',
+'Chirag Rami ',
+'Akash Thakkar',
+'Khushi Mundra',
+'Ami Thakkar',
+'Ashutosh Dave',
+'Dhruv Samani',
+'Sajid Shaikh ',
+'QURESHI MOHAMMADJALAL',
+'Devang Patel',
+'Pravin Fofariya ',
+'Raj Singhala',
+'Mahesh Kumar Dey',
+'Akshat Pujara',
+'Shivam Pathak',
+'Suhas Vaishnav',
+'Nirbhay Goswami',
+'Manjeet Kaur Bhasin',
+'Yash Parmar',
+'Rutvik Dhami',
+'Harsh Shah',
+'Farhan Shaikh ',
+'Priyank Jamvecha',
+'Rutvik Jamvecha',
+'Raj Singhala',
+'SRINIVAS KALYAN MORLA',
+'Madhupada Vinay',
+'Namrata Jenish kacha',
+'Nisarg Parikh',
+'Ruchi Kariya',
+'Jhanvi Vaishnav',
+'Dhruv Sanjaybhai Kikani ',
+'Kushal jain',
+'Renish Dudhat',
+'kushal jain',
+'Snehal Prajapati',
+];
+ var chunks = [];
+  for (var i = 0; i < s.length; i += 4) {
+    chunks.add(s.sublist(i, i+2 > s.length ? s.length : i + 4)); 
+  }
+  print(chunks);
+  var maps=chunks.asMap();
+  print(maps);
+   for (final mapEntry in maps.entries) {
+    final key = mapEntry.key;
+    final value = mapEntry.value;
+    print('group: $key, Value: $value');  // Key: a, Value: 1 ...
+  }
+ 
+}

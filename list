@@ -357,6 +357,21 @@ void main()//main function body
   print(h);
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Remove numbers from odd position
+void main(){
+    dynamic  s= [2,5,3,4,6,7,9,8]; 
+var h=[];//to collect sub sets
+    for(int i = 0; i < s.length; i++)//loop for odd positon
+    {
+        if (i % 2 != 0)   //logic for odd position  
+     h.add(s.sublist(i)); //divided into sub list 
+      //print(h);//[5,3,4,6,7,9,10],[4,6,7,9,8],[7,9,8],[8]
+    }
+  for (var d in h)//for print sub list first element
+  {
+   print(d.first);//
+  }
+}
 
 //Update the values of a list with their absolute values
 void main() {

@@ -338,3 +338,16 @@ void main() //main function body
   print("Sum : $sum");//print sum
 }
   
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void main()//main function body
+{ 
+   String arr = 'ccbabacc'; 
+
+  
+ List<String> result = arr.split('');//split to string
+  print(result);//print the split arr
+     final diff = result.toSet().toList();//arr to set to remove duplicate value because set is not consider duplicate value
+  print(diff); //print unique array value
+   var h=diff.join();//join arry to string
+  print(h);
+}

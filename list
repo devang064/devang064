@@ -322,6 +322,7 @@ final List<String>s  = <String>[
  
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//You are given a list. Return the sum of odd elements from the given list
 void main() //main function body
 {
   var sum = 0;//counter on sum =0
@@ -339,6 +340,10 @@ void main() //main function body
 }
   
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//You are given a string, str, of length N consisting of lowercase letters of alphabet. You have
+to remove all those characters from str which have already appeared in it, i.e., you have to
+keep only first occurrence of each letter.
+
 void main()//main function body
 { 
    String arr = 'ccbabacc'; 
@@ -350,4 +355,17 @@ void main()//main function body
   print(diff); //print unique array value
    var h=diff.join();//join arry to string
   print(h);
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Update the values of a list with their absolute values
+void main() {
+   var n = [2, -4, 3, -1, 23, -4, -54];//non absolute arr
+   var a= [];//empty list for print abs value
+  for (var i in n) {
+    if (n.contains(i)) {
+      a.add(i.abs()); // abs make list absolute and add in a empty list
+    }
+  }
+  print("absolute Value List : $a"); // [2, 4, 3, 1, 23, 4, 54]
 }

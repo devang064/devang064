@@ -321,3 +321,20 @@ final List<String>s  = <String>[
   }
  
 }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void main() //main function body
+{
+  var sum = 0;//counter on sum =0
+  var list = [3,2,4,6,5,7,8,0,1];
+
+  for(var i in list) //i used for each loop loop is check each element
+  {
+    if (i%2 != 0)//condition for odd num
+  {
+      print (i);//print all odd num
+      sum += i;//sum of odd num
+  }
+  }
+  print("Sum : $sum");//print sum
+}
+  

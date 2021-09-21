@@ -465,3 +465,36 @@ void main() {
   var y = temp.toSet().toList();//list to set remove duplicate value
   print(y);
 }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//2. Find Maximum and Minimum Number of Array
+void main()
+{ 
+var x= [5,7,4,1,9,0,10,8];
+  var min= (x.toList()..sort()).first;//sort the listand print first element
+var max= (x.toList()..sort()).last;////sort the list and print last element
+  print("min num From List is: $min");
+  print("max num From List is: $max");
+  var o=x.toList().indexOf(min);
+  print (o);
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//1. Declare Array/List Of Int Pick and Print Random Element from same Array
+void main()
+{ 
+var x= [5,7,4,1,9,0,10,8];
+var random= (x.toList()..shuffle()).first;//suffle the list and get the first element
+print("random num From List is: $random");//print first element
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//3. Find The index of Maximum And Minimum Number
+void main()
+{ 
+var x= [111,5,7,4,1,9,0,10,110,8];
+var min= (x.toList()..sort()).first;//sort the list[0,1,4,5,7,8,9,10] and print first element
+var max= (x.toList()..sort()).last;////sort the list[0,1,4,5,7,8,9,10] and print last element
+var o=x.toList().indexOf(min);//index of min value in x list
+var p=x.toList().indexOf(max);//index of max value in x list
+print('Minimum Element $min at $o position in list ');
+print('Maximum Element $max is at $p position in list ');
+
+}

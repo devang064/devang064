@@ -1,0 +1,66 @@
+import 'dart:typed_data';
+
+import 'package:flutter/material.dart';
+import 'package:learning/main.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          actions: [
+            Image.asset('image/icon.jpg')
+          ], //Image.asset ('asset/image/icon.jpg'),
+
+          title: Text('hello world basic'),
+        ),
+        body:
+        Stack(
+          children: [
+            Container(
+              height: 100,
+              width: 100,
+              color: Colors.amber,
+            ),
+            Container(
+              height: 90,
+              width: 90,
+              color: Colors.green,
+            ),
+            Container(
+              height: 80,
+              width: 80,
+              color: Colors.white54,
+            ),
+            Container(
+              height: 70,
+              width: 70,
+              color: Colors.red,
+            ),
+            Container(
+              height: 60,
+              width: 60,
+              color: Colors.lightBlue,
+            ),
+            Container(
+              height: 50,
+              color: Colors.red,
+              width: 50,
+            ),
+            Container(
+              height: 40,
+              color: Colors.purple,
+              width: 40,
+            ),
+          ],
+        ),
+        backgroundColor: Colors.amber,
+      ),
+    );
+  }
+}
